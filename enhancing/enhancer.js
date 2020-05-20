@@ -9,9 +9,10 @@ module.exports = {
 function succeed(item) {
   if(item.enhancement >= 0 && item.enhancement < 20)
   return item.enhancement + 1;
-  else if  (item.enhancement = 20)
-  return item.enhancement;
-  else
+  else if  (item.enhancement >= 20)
+  return item.enhancement = 20;
+  else if (item.enhancement < 0)
+  return item.enhancement = 0
   return { ...item };
 }
 
